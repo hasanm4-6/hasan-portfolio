@@ -1,95 +1,89 @@
-'use client';
+"use client";
 
-import { Badge } from '@/components/ui/badge';
-import { Card } from '@/components/ui/card';
-import { AnimatedProgressBar } from '@/components/animated-progress-bar';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import { AnimatedProgressBar } from "@/components/animated-progress-bar";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const skillsByProficiency = [
   {
-    level: 'Expert',
+    level: "Expert",
     skills: [
-      { name: 'React.js', percentage: 95 },
-      { name: 'Next.js', percentage: 90 },
-      { name: 'TypeScript', percentage: 90 },
-      { name: 'Node.js', percentage: 92 },
-      { name: 'Express.js', percentage: 90 },
-      { name: 'MongoDB', percentage: 88 },
+      { name: "React.js", percentage: 95 },
+      { name: "Next.js", percentage: 90 },
+      { name: "TypeScript", percentage: 90 },
+      { name: "Node.js", percentage: 92 },
+      { name: "Express.js", percentage: 90 },
+      { name: "MongoDB", percentage: 88 },
     ],
   },
   {
-    level: 'Advanced',
+    level: "Advanced",
     skills: [
-      { name: 'Python', percentage: 85 },
-      { name: 'FastAPI', percentage: 85 },
-      { name: 'PostgreSQL', percentage: 83 },
-      { name: 'Tailwind CSS', percentage: 85 },
-      { name: 'System Design', percentage: 80 },
-      { name: 'REST APIs', percentage: 88 },
+      { name: "Python", percentage: 85 },
+      { name: "FastAPI", percentage: 85 },
+      { name: "PostgreSQL", percentage: 83 },
+      { name: "Tailwind CSS", percentage: 85 },
+      { name: "System Design", percentage: 80 },
+      { name: "REST APIs", percentage: 88 },
     ],
   },
   {
-    level: 'Intermediate',
+    level: "Intermediate",
     skills: [
-      { name: 'Django', percentage: 75 },
-      { name: 'Docker', percentage: 72 },
-      { name: 'AWS', percentage: 68 },
-      { name: 'GraphQL', percentage: 70 },
-      { name: 'Redis', percentage: 65 },
-      { name: 'CI/CD', percentage: 70 },
+      { name: "Django", percentage: 75 },
+      { name: "Docker", percentage: 72 },
+      { name: "AWS", percentage: 68 },
+      { name: "GraphQL", percentage: 70 },
+      { name: "Redis", percentage: 65 },
+      { name: "CI/CD", percentage: 70 },
     ],
   },
 ];
 
 const skillCategories = [
   {
-    category: 'Frontend',
+    category: "Frontend",
     skills: [
-      'React.js',
-      'Next.js',
-      'TypeScript',
-      'JavaScript',
-      'HTML/CSS',
-      'Tailwind CSS',
-      'Redux',
-      'React Query',
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML/CSS",
+      "Tailwind CSS",
+      "Redux",
+      "React Query",
     ],
   },
   {
-    category: 'Backend',
+    category: "Backend",
     skills: [
-      'Node.js',
-      'Express.js',
-      'FastAPI',
-      'Python',
-      'Django',
-      'REST APIs',
-      'GraphQL',
-      'WebSockets',
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Python",
+      "Django",
+      "REST APIs",
+      "GraphQL",
+      "WebSockets",
     ],
   },
   {
-    category: 'Databases',
-    skills: [
-      'MongoDB',
-      'PostgreSQL',
-      'MySQL',
-      'Supabase',
-      'Redis',
-      'Database Design',
-    ],
+    category: "Databases",
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "Supabase", "Database Design"],
   },
   {
-    category: 'Tools & Systems',
+    category: "Tools & Systems",
     skills: [
-      'Git',
-      'Docker',
-      'CI/CD',
-      'AWS',
-      'Vercel',
-      'Postman',
-      'Linux',
-      'Nginx',
+      "Git",
+      "Docker",
+      "CI/CD",
+      "AWS",
+      "Vercel",
+      "Postman",
+      "Insomnia",
+      "Linux",
+      "Nginx",
     ],
   },
 ];
@@ -160,10 +154,10 @@ export function SkillsSection() {
 
         <Card className="p-6 sm:p-8 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 border-blue-200 dark:border-blue-800">
           <p className="text-sm text-center text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">MERN Stack Specialist</strong> with strong Python/FastAPI
-            capabilities. Experienced in building authentication systems,
-            dashboards, booking logic, chatbot integrations, and complex
-            database modeling.
+            <strong className="text-foreground">MERN Stack Specialist</strong>{" "}
+            with strong Python/FastAPI and Django capabilities. Experienced in building
+            authentication systems, dashboards, booking logic, chatbot
+            integrations, and complex database modeling.
           </p>
         </Card>
       </div>
