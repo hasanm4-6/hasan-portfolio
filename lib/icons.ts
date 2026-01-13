@@ -11,5 +11,5 @@ export {
   Code2,
   Layers,
   Users,
-  Zap,Mail, Linkedin, Github, Send, Briefcase,ExternalLink, ChevronDown, MoonIcon,
+  Zap, Mail, Linkedin, Github, Send, Briefcase, ExternalLink, ChevronDown, MoonIcon, Download, Eye
 } from "lucide-react";

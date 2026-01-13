@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail, ArrowRight } from "@/lib/icons";
+import { Github, Linkedin, Mail, ArrowRight, Download, Eye } from "@/lib/icons";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -53,12 +54,26 @@ export function HeroSection() {
           </Button>
           <Button
             size="lg"
-            variant="outline"
             onClick={() => scrollToSection("#contact")}
             className="gap-2 min-w-48"
           >
             <Mail className="h-4 w-4" />
             Let&apos;s Talk
+          </Button>
+          <Button
+            size="lg"
+            onClick={() => scrollToSection("#contact")}
+            className="gap-2 min-w-48"
+          >
+            <a
+              href="/resume/Muhammad Hasan Munir Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 min-w-48"
+            >
+              <Eye className="h-4 w-4" />
+              Preview CV
+            </a>
           </Button>
         </div>
 
@@ -81,6 +96,15 @@ export function HeroSection() {
           >
             <Linkedin className="h-5 w-5" />
           </a>
+
+          <a
+            href="/resume/Muhammad Hasan Munir Resume.pdf"
+            download
+            className="p-3 rounded-full hover:bg-accent transition-all duration-300 hover:scale-110 border border-border"
+            aria-label="Download CV"
+          >
+            <Download className="h-5 w-5" />
+          </a>
         </div>
 
         {/* <button
@@ -93,7 +117,6 @@ export function HeroSection() {
           </div>
         </button> */}
       </div>
-      
     </section>
   );
 }
