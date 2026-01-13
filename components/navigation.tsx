@@ -9,8 +9,10 @@ const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Certificates', href: '#certifications' },
   { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
+  // { name: 'Projects', href: '#projects' },
+  { name: 'Credentials', href: '#credentials' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -40,7 +42,7 @@ export function Navigation() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-background/80 backdrop-blur-md border-b border-border shadow-sm'
+          ? 'bg-background/30 backdrop-blur-md border-b border-border shadow-sm'
           : 'bg-transparent'
       )}
     >
