@@ -62,7 +62,6 @@ export function HeroSection() {
           </Button>
           <Button
             size="lg"
-            onClick={() => scrollToSection("#contact")}
             className="gap-2 min-w-48"
           >
             <a
