@@ -1,9 +1,5 @@
-"use client";
-
-import Link from "next/link";
-import { Code2, Layers, Users, Zap, ArrowRight } from "lucide-react";
+import { Code2, Layers, Users, Zap,  } from "@/lib/icons";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const highlights = [
   {

@@ -1,11 +1,8 @@
-"use client";
-
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap, Award } from "@/lib/icons";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";

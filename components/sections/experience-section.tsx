@@ -1,6 +1,4 @@
-"use client";
-
-import { Briefcase } from "lucide-react";
+import { Briefcase } from "@/lib/icons";
 import {
   Card,
   CardContent,

@@ -1,7 +1,3 @@
-"use client";
-
-import { Card } from "@/components/ui/card";
-
 export function VerifiedCredentialsSection() {
   return (
     <section

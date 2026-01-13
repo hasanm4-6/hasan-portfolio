@@ -1,10 +1,8 @@
-'use client';
-
 import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/footer';
 import { AnimatedGradientBg } from '@/components/animated-gradient-bg';
 import { Card } from '@/components/ui/card';
-import { Code2, Layers, Users, Zap, BookOpen, Target } from 'lucide-react';
+import { Code2, Layers, Users, Zap, BookOpen, Target } from '@/lib/icons';
 
 export default function AboutPage() {
   const milestones = [

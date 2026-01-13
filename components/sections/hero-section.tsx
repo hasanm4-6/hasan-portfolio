@@ -1,8 +1,5 @@
-"use client";
-
-import { ArrowDown, Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight } from "@/lib/icons";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function HeroSection() {
   const scrollToSection = (id: string) => {
