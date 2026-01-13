@@ -6,7 +6,7 @@ export function VerifiedCredentialsSection() {
   return (
     <section
       id="credentials"
-      className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30"
+      className="py-24 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center space-y-4 mb-16">
