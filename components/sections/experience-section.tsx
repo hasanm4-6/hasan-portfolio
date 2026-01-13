@@ -1,57 +1,67 @@
-'use client';
+"use client";
 
-import { Briefcase, GraduationCap, Award } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Briefcase } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const experiences = [
   {
-    icon: Briefcase,
-    title: 'Full-Stack Software Engineer',
-    organization: 'Professional Experience',
-    period: '10+ Months',
+    title: "Full-Stack Software Engineer",
+    organization: "TSN (The Social Nexus)",
+    web: "https://thesocialnexus.org/",
+    period: "6+ Months",
     description:
-      'Collaborated with clients and teams in real software engineering environments, translating business requirements into technical solutions. Built production-grade applications involving authentication, role-based access, dashboards, booking systems, and API integrations.',
+      "Worked as a Full Stack Software Engineer, delivering production-grade features across multiple consumer, B2B, and healthcare platforms. Operated with end-to-end ownership, translating product requirements into scalable, secure, and maintainable solutions in a remote, milestone-driven environment.",
     highlights: [
-      'Designed and implemented scalable REST APIs',
-      'Built authentication and authorization systems',
-      'Developed responsive dashboards with real-time data',
-      'Integrated third-party services and chatbot solutions',
-      'Worked with Next.js, FastAPI, MongoDB, Supabase, and PostgreSQL',
+      "Built and maintained end-to-end product features, covering frontend interfaces, backend logic, data modeling, and integrations.",
+      "Designed and implemented authentication systems, role-based access, onboarding flows, and account lifecycle management.",
+      "Developed subscription, billing, and payment workflows, supporting freemium, premium, recurring, and end-of-month consolidated billing models.",
+      "Implemented event-driven and booking systems, including multi-step creation flows, recurring reservations, and dynamic availability logic.",
+      "Designed intelligent user-matching and behavioral logic based on shared interests, overlapping activities, and contextual interactions.",
+      "Built admin panels and internal tools for content management, FAQs, waitlists, questionnaires, and data exports.",
+      "Implemented email communication pipelines for transactional, onboarding, and product-engagement messaging.",
+      "Delivered analytics instrumentation, tracking user actions, funnel progress, and feature adoption.",
+      "Translated design prototypes into responsive, accessible user interfaces while maintaining consistent styling and performance standards.",
+      "Supported multi-phase product milestones, including feature delivery, UAT fixes, documentation, and handover.",
+      "Collaborated closely with product and stakeholders to align technical execution with business goals.",
     ],
   },
   {
-    icon: GraduationCap,
-    title: 'C Programming Instructor',
-    organization: 'Teaching Experience',
-    period: 'Previous Role',
-    description:
-      'Taught C programming fundamentals, sharpening problem-solving skills and reinforcing disciplined approaches to memory management and logic. Developed the ability to explain complex technical concepts clearly.',
+    title: "Backend Engineer",
+    organization: "Websolixs",
+    web: "https://websolixs.com/",
+    period: "6+ Months",
+    description: "",
     highlights: [
-      'Taught data structures, algorithms, and memory management',
-      'Created curriculum and learning materials',
-      'Mentored students in problem-solving approaches',
-      'Reinforced fundamentals through teaching',
+      "Designed, built, and maintained scalable backend systems, owning API design, application flow, and database schema architecture across multiple projects.",
+      "Led database modeling and optimization, defining relationships, schemas, and data flow to support performance and scalability.",
+      "Collaborated with frontend teams to deliver secure, well-structured backend services aligned with product requirements.",
     ],
   },
   {
-    icon: Award,
-    title: 'Computer Science Student',
-    organization: 'Academic Background',
-    period: 'Ongoing',
-    description:
-      'Pursuing Computer Science degree while building real-world applications. Combining theoretical knowledge with practical engineering experience.',
+    title: "Full Stack Web Developer Trainee",
+    organization: "SeeBiz",
+    web: "https://see.biz/",
+    period: "Previous Role",
+    description: "",
     highlights: [
-      'Strong foundation in algorithms and data structures',
-      'Understanding of system design principles',
-      'Continuous learning and skill development',
-      'Active in open-source and personal projects',
+      "Strong foundation in algorithms and data structures",
+      "Understanding of system design principles",
+      "Continuous learning and skill development",
+      "Active in open-source and personal projects",
     ],
   },
 ];
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
@@ -71,7 +81,7 @@ export function ExperienceSection() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <exp.icon className="h-6 w-6 text-primary" />
+                    <Briefcase className="h-6 w-6 text-primary" />
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
@@ -79,7 +89,12 @@ export function ExperienceSection() {
                     <div>
                       <h3 className="text-lg font-semibold">{exp.title}</h3>
                       <p className="text-sm text-muted-foreground">
-                        {exp.organization}
+                        <a
+                          href={exp.web}
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {exp.organization}
+                        </a>
                       </p>
                     </div>
                     <span className="text-sm font-medium text-primary px-3 py-1 bg-primary/10 rounded-full">
@@ -89,10 +104,10 @@ export function ExperienceSection() {
                   <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                     {exp.description}
                   </p>
-                  <ul className="space-y-2">
+                  Key Responsibilities & Contributions:
+                  <ul className="list-disc pl-5 space-y-2 marker:text-primary">
                     {exp.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-sm flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
+                      <li key={idx} className="text-sm">
                         <span>{highlight}</span>
                       </li>
                     ))}
