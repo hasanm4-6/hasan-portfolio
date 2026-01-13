@@ -1,25 +1,29 @@
-'use client';
+"use client";
 
-import { HeroSection } from '@/components/sections/hero-section';
-import { AboutSection } from '@/components/sections/about-section';
-import { SkillsSection } from '@/components/sections/skills-section';
-import { ExperienceSection } from '@/components/sections/experience-section';
-import { ProjectsSection } from '@/components/sections/projects-section';
-import { ContactSection } from '@/components/sections/contact-section';
-import { Navigation } from '@/components/navigation';
-import { Footer } from '@/components/footer';
-import { AnimatedGradientBg } from '@/components/animated-gradient-bg';
+import { HeroSection } from "@/components/sections/hero-section";
+import { AboutSection } from "@/components/sections/about-section";
+import { SkillsSection } from "@/components/sections/skills-section";
+import { CertificateSection } from "@/components/sections/certificates-section";
+import { ExperienceSection } from "@/components/sections/experience-section";
+import { ProjectsSection } from "@/components/sections/projects-section";
+import { VerifiedCredentialsSection } from "@/components/sections/badges-section";
+import { ContactSection } from "@/components/sections/contact-section";
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { AnimatedGradientBg } from "@/components/animated-gradient-bg";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background relative">
+    <main className="min-h-screen  relative bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10">
       <AnimatedGradientBg />
       <Navigation />
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <CertificateSection />
       <ExperienceSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
+      <VerifiedCredentialsSection />
       <ContactSection />
       <Footer />
     </main>
