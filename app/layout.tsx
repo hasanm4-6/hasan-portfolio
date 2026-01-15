@@ -89,6 +89,7 @@ export default function RootLayout({
             }),
           }}
         />
+      <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
