@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://hasan-munir-portfolio.vercel.app/og/OG.png",
-        width: 1200,
-        height: 630,
+        // width: 1200,
+        // height: 630,
         alt: "Muhammad Hasan Munir – Full-Stack Software Engineer",
       },
     ],
