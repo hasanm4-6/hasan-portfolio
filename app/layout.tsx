@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Muhammad Hasan Munir Portfolio",
     images: [
       {
-        url: "https://hasan-munir-portfolio.vercel.app/og/OG.png",
+        url: "https://hasan-munir-portfolio.vercel.app/og/og.png",
         // width: 1200,
         // height: 630,
         alt: "Muhammad Hasan Munir – Full-Stack Software Engineer",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Muhammad Hasan Munir | Full-Stack Software Engineer",
     description:
       "Full-Stack Software Engineer specializing in MERN, Next.js, FastAPI, and scalable systems.",
-    images: ["https://hasan-munir-portfolio.vercel.app/og/OG.png"],
+    images: ["https://hasan-munir-portfolio.vercel.app/og/og.png"],
   },
   // twitter: {
   // card: "summary_large_image",
